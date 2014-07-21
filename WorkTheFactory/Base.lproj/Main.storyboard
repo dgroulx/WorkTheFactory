@@ -22,6 +22,9 @@
                                 <state key="normal" title="JOIN">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Cj7-wH-YOm" kind="show" id="lzh-Ry-fj6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN0-rx-aD7">
                                 <rect key="frame" x="20" y="245" width="215" height="215"/>
@@ -77,5 +80,70 @@
             </objects>
             <point key="canvasLocation" x="239" y="268"/>
         </scene>
+        <!--Join View Controller-->
+        <scene sceneID="yXN-Yv-ULH">
+            <objects>
+                <viewController id="Cj7-wH-YOm" customClass="JoinViewController" customModule="WorkTheFactory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QK2-a9-Mal"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xng-JS-Pw5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2wy-lB-0pj">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOb-6a-6OE">
+                                <rect key="frame" x="0.0" y="72" width="480" height="408"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JOIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tm9-jy-eCL">
+                                <rect key="frame" x="221" y="20" width="39" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wAK-yH-uGs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9A-V6-bbV">
+                                <rect key="frame" x="20" y="20" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="4je-4O-kwX"/>
+                                </constraints>
+                                <state key="normal" image="hamburger-gold">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tm9-jy-eCL" secondAttribute="centerX" id="8yC-Jj-Guf"/>
+                            <constraint firstItem="tm9-jy-eCL" firstAttribute="top" secondItem="2wy-lB-0pj" secondAttribute="top" constant="20" symbolic="YES" id="BPw-z6-Xav"/>
+                            <constraint firstAttribute="bottom" secondItem="ZOb-6a-6OE" secondAttribute="bottom" id="Cpu-vI-MhW"/>
+                            <constraint firstItem="f9A-V6-bbV" firstAttribute="leading" secondItem="2wy-lB-0pj" secondAttribute="leading" constant="20" symbolic="YES" id="EzX-dk-MOr"/>
+                            <constraint firstItem="ZOb-6a-6OE" firstAttribute="leading" secondItem="2wy-lB-0pj" secondAttribute="leading" id="TDl-Hn-xYD"/>
+                            <constraint firstItem="Xng-JS-Pw5" firstAttribute="top" secondItem="ZOb-6a-6OE" secondAttribute="bottom" constant="20" symbolic="YES" id="b21-82-knV"/>
+                            <constraint firstItem="tm9-jy-eCL" firstAttribute="top" secondItem="f9A-V6-bbV" secondAttribute="top" id="f33-bG-IP8"/>
+                            <constraint firstItem="ZOb-6a-6OE" firstAttribute="top" secondItem="f9A-V6-bbV" secondAttribute="bottom" constant="8" symbolic="YES" id="hnR-EV-gU8"/>
+                            <constraint firstItem="ZOb-6a-6OE" firstAttribute="top" secondItem="tm9-jy-eCL" secondAttribute="bottom" constant="8" symbolic="YES" id="knt-vk-tob"/>
+                            <constraint firstAttribute="trailing" secondItem="ZOb-6a-6OE" secondAttribute="trailing" id="nDu-bO-L3x"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="b21-82-knV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ZOb-6a-6OE" id="CwZ-PX-5KC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8s-Sj-oxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="315"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="hamburger-gold" width="67" height="67"/>
+    </resources>
 </document>
