@@ -115,6 +115,9 @@
                                 <state key="normal" image="hamburger-gold">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="hst-C2-Qse"/>
+                                </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOb-6a-6OE">
                                 <rect key="frame" x="0.0" y="72" width="480" height="408"/>
@@ -178,6 +181,9 @@
                                 <state key="normal" image="hamburger-gold">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="08q-pQ-bfu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -191,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uj5-LG-SY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="1003"/>
+            <point key="canvasLocation" x="201" y="1104"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="g9N-s8-ceb">
@@ -229,6 +235,9 @@
                                 <state key="normal" image="hamburger-gold">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="h2O-eC-wJP"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2MM-ch-iPI">
                                 <rect key="frame" x="0.0" y="72" width="480" height="928"/>
@@ -322,4 +331,7 @@
         <image name="hamburger-gold" width="67" height="67"/>
         <image name="twitter" width="88" height="88"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hst-C2-Qse"/>
+    </inferredMetricsTieBreakers>
 </document>
