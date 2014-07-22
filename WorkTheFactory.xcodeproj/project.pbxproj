@@ -15,6 +15,7 @@
 		63136A8F197D71D500885C08 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63136A8E197D71D500885C08 /* HomeViewController.swift */; };
 		63E95BC6197D8A800014A489 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E95BC5197D8A800014A489 /* JoinViewController.swift */; };
 		63E95BC8197D90430014A489 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E95BC7197D90430014A489 /* AboutViewController.swift */; };
+		63E95BCA197DE0ED0014A489 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E95BC9197DE0ED0014A489 /* SpaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		63136A8E197D71D500885C08 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		63E95BC5197D8A800014A489 /* JoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
 		63E95BC7197D90430014A489 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		63E95BC9197DE0ED0014A489 /* SpaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				63136A71197D44B200885C08 /* AppDelegate.swift */,
 				63136A73197D44B200885C08 /* ViewController.swift */,
 				63136A75197D44B200885C08 /* Main.storyboard */,
+				63E95BC9197DE0ED0014A489 /* SpaceViewController.swift */,
 				63E95BC7197D90430014A489 /* AboutViewController.swift */,
 				63E95BC5197D8A800014A489 /* JoinViewController.swift */,
 				63136A8E197D71D500885C08 /* HomeViewController.swift */,
@@ -220,6 +223,7 @@
 				63136A74197D44B200885C08 /* ViewController.swift in Sources */,
 				63136A72197D44B200885C08 /* AppDelegate.swift in Sources */,
 				63E95BC6197D8A800014A489 /* JoinViewController.swift in Sources */,
+				63E95BCA197DE0ED0014A489 /* SpaceViewController.swift in Sources */,
 				63E95BC8197D90430014A489 /* AboutViewController.swift in Sources */,
 				63136A8F197D71D500885C08 /* HomeViewController.swift in Sources */,
 			);
